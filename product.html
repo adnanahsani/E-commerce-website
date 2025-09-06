@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="du">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Products</title>
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .product-container {
+            margin-top: 50px;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .product-image {
+            width: 100%;
+            height: auto;
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container product-container">
+        <h1 class="text-center">Our Products</h1>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="images/power-tab.jpeg" alt="Tablet Pc" class="product-image">
+                <h2>Tablet Pc</h2>
+                <p>Price: Rs1000.99</p>
+                <p>A powerful tablet with a sleek design, perfect for browsing, gaming, and productivity.</p>
+                <button class="btn btn-primary" onclick="addToCart('Tablet Pc', 1000.99)">Add to Cart</button>
+            </div>
+            <div class="col-md-4">
+                <img src="images/ps4-gaming.jpg" alt="X-box Console" class="product-image">
+                <h2>X-box Console</h2>
+                <p>Price: Rs2000</p>
+                <p>The ultimate gaming console with stunning graphics and a vast library of games.</p>
+                <button class="btn btn-primary" onclick="addToCart('X-box Console', 2000)">Add to Cart</button>
+            </div>
+            <div class="col-md-4">
+                <img src="images/iphonex-phone.jpg" alt="Iphone X" class="product-image">
+                <h2>IPhone X</h2>
+                <p>Price: Rs4999.99</p>
+                <p>The iPhone X features a stunning display, advanced Face ID, and a powerful camera.</p>
+                <button class="btn btn-primary" onclick="addToCart('IPhone X', 4999.99)">Add to Cart</button>
+            </div>
+            <div class="col-md-4">
+                <img src="images/keyboard.jpg" alt="Logitech Super Slim" class="product-image">
+                <h2>Logitech Super Slim</h2>
+                <p>Price: Rs199.99</p>
+                <p>A compact and portable keyboard designed for convenience and ease of use.</p>
+                <button class="btn btn-primary" onclick="addToCart('Logitech Super Slim', 199.99)">Add to Cart</button>
+            </div>
+            <div class="col-md-4">
+                <img src="images/Alienware-laptop.png" alt="Alienware Laptop" class="product-image">
+                <h2>Alienware Laptop</h2>
+                <p>Price: Rs7000.99</p>
+                <p>A high-performance gaming laptop with cutting-edge technology and immersive graphics.</p>
+                <button class="btn btn-primary" onclick="addToCart('Alienware Laptop', 7000.99)">Add to Cart</button>
+            </div>
+            <div class="col-md-4">
+                <img src="images/canon-cam.jpg" alt="Canon 12X Pro Shoot" class="product-image">
+                <h2>Canon 12X Pro Shoot</h2>
+                <p>Price: Rs990</p>
+                <p>Capture stunning photos and videos with this professional-grade camera.</p>
+                <button class="btn btn-primary" onclick="addToCart('Canon 12X Pro Shoot', 990)">Add to Cart</button>
+            </div>
+            <div class="col-md-4">
+                <img src="images/iphone9-phone.jpg" alt="IPhone SE" class="product-image">
+                < h2>IPhone SE</h2>
+                <p>Price: Rs4999.99</p>
+                <p>A compact smartphone with powerful features and a sleek design, perfect for everyday use.</p>
+                <button class="btn btn-primary" onclick="addToCart('IPhone SE', 4999.99)">Add to Cart</button>
+            </div>
+            <div class="col-md-4">
+                <img src="images/logitech-tab.png" alt="Samsung Tablet PC" class="product-image">
+                <h2>Samsung Tablet PC</h2>
+                <p>Price: Rs3999.99</p>
+                <p>A versatile tablet that combines performance and portability for all your needs.</p>
+                <button class="btn btn-primary" onclick="addToCart('Samsung Tablet PC', 3999.99)">Add to Cart</button>
+            </div>
+            <div class="col-md-4">
+                <img src="images/imac.jpg" alt="Apple Imac" class="product-image">
+                <h2>Apple Imac</h2>
+                <p>Price: Rs7999.99</p>
+                <p>A powerful desktop computer with a stunning display and advanced features for professionals.</p>
+                <button class="btn btn-primary" onclick="addToCart('Apple Imac', 7999.99)">Add to Cart</button>
+            </div>
+            <div class="col-md-4">
+                <img src="images/thunderbolt.jpeg" alt="USB Type-C Thunderbolt" class="product-image">
+                <h2>USB Type-C Thunderbolt</h2>
+                <p>Price: Rs200</p>
+                <p>A high-speed cable for fast data transfer and charging, compatible with various devices.</p>
+                <button class="btn btn-primary" onclick="addToCart('USB Type-C Thunderbolt', 200)">Add to Cart</button>
+            </div>
+            <div class="col-md-4">
+                <img src="images/cod-ps4.jpg" alt="Call of Duty MW" class="product-image">
+                <h2>Call of Duty MW</h2>
+                <p>Price: Rs1000.99</p>
+                <p>Experience the thrill of battle in this action-packed first-person shooter game.</p>
+                <button class="btn btn-primary" onclick="addToCart('Call of Duty MW', 1000.99)">Add to Cart</button>
+            </div>
+            <div class="col-md-4">
+                <img src="images/phantom-drone.png" alt="Phantom Drone" class="product-image">
+                <h2>Phantom Drone</h2>
+                <p>Price: Rs2500.00</p>
+                <p>Capture stunning aerial footage with this high-performance drone.</p>
+                <button class="btn btn-primary" onclick="addToCart('Phantom Drone', 2500.00)">Add to Cart</button>
+            </div>
+            <div class="col-md-4">
+                <img src="images/epson-projector.png" alt="Epson Projector" class="product-image">
+                <h2>Epson Projector</h2>
+                <p>Price: Rs1000.99</p>
+                <p>Bring your presentations to life with this high-quality projector.</p>
+                <button class="btn btn-primary" onclick="addToCart('Epson Projector', 1000.99)">Add to Cart</button>
+            </div>
+            <div class="col-md-4">
+                <img src="images/ps4-headset.jpg" alt="Ps4 Gaming Headset" class="product-image">
+                <h2>Ps4 Gaming Headset</h2>
+                <p>Price: Rs800</p>
+                <p>Immerse yourself in the game with this comfortable and high-quality gaming headset.</p>
+                <button class="btn btn-primary" onclick="addToCart('Ps4 Gaming Headset', 800)">Add to Cart</button>
+            </div>
+            <div class="col-md-4">
+                <img src="images/superbass-speakers.jpg" alt="Super Bass USB Speakers" class="product-image">
+                <h2>Super Bass USB Speakers</h2>
+                <p>Price: Rs1500</p>
+                <p>Enjoy rich sound quality with these powerful USB speakers.</p>
+                <button class="btn btn-primary" onclick="addToCart('Super Bass USB Speakers', 1500)">Add to Cart</button>
+            </div>
+            <div class="col-md-4">
+                <img src="images /xbox-game.jpg" alt="Fifa 20 Xbox" class="product-image">
+                <h2>Fifa 20 Xbox</h2>
+                <p>Price: Rs300</p>
+                <p>Experience the excitement of football with this popular video game.</p>
+                <button class="btn btn-primary" onclick="addToCart('Fifa 20 Xbox', 300)">Add to Cart</button>
+            </div>
+            <div class="col-md-4">
+                <img src="images/xbox-headset.jpg" alt="X-box Headset" class="product-image">
+                <h2>X-box Headset</h2>
+                <p>Price: Rs1000.99</p>
+                <p>Enjoy clear audio and communication with this premium gaming headset.</p>
+                <button class="btn btn-primary" onclick="addToCart('X-box Headset', 1000.99)">Add to Cart</button>
+            </div>
+            <div class="col-md-4">
+                <img src="images/falcon-drone.jpg" alt="Falcon Drone" class="product-image">
+                <h2>Falcon Drone</h2>
+                <p>Price: Rs3000</p>
+                <p>Capture stunning aerial views with this advanced drone technology.</p>
+                <button class="btn btn-primary" onclick="addToCart('Falcon Drone', 3000)">Add to Cart</button>
+            </div>
+            <div class="col-md-4">
+                <img src="images/ps4-fortnite.jpg" alt="Ps4 Fornite" class="product-image">
+                <h2>Ps4 Fornite</h2>
+                <p>Price: Rs300</p>
+                <p>Join the battle in this popular multiplayer game with friends.</p>
+                <button class="btn btn-primary" onclick="addToCart('Ps4 Fornite', 300)">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function addToCart(productName, productPrice) {
+            // Store product information in localStorage
+            localStorage.setItem('cartProduct', JSON.stringify({ name: productName, price: productPrice }));
+            alert(productName + " has been added to your cart!");
+        }
+    </script>
+</body>
+
+</html>
